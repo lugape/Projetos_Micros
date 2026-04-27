@@ -31,7 +31,7 @@ loop:
     ACALL atualiza_display     ; Atualiza o número e o ponto decimal
     SJMP loop
 
-; --- Subrotina de Verificação de Direção (Com detecção de mudança) ---
+; Subrotina de Verificação de Direção (Com detecção de mudança)
 verifica_direcao:
     MOV C, P2.0
     JNB F0, era_zero           ; Se era 0, verifica se mudou para 1
@@ -70,7 +70,7 @@ reset_timer:
     SETB TR1
     RET
 
-; --- Subrotina de Atualização do Display com Ponto Decimal ---
+; Subrotina de Atualização do Display com Ponto Decimal
 atualiza_display:
     ; Calcula o valor atual da contagem (Diferença entre atual e o preset F6h)
     MOV A, TL1
@@ -90,7 +90,7 @@ envia_1:
     MOV P1, A
     RET
 
-; --- Tabela de Conversão (Ânodo Comum) ---
+; Tabela de Conversão (Ânodo Comum)
 tabela:
     DB 0C0h, 0F9h, 0A4h, 0B0h, 099h, 092h, 082h, 0F8h, 080h, 090h ; em ordem de 0 a 9
 
