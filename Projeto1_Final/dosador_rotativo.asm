@@ -60,7 +60,7 @@ antihorario:
     CLR P3.1
     RET
 
-; --- Subrotina de Reset (Chamada por Interrupção ou Mudança de Direção) ---
+; Subrotina de Reset (Chamada por Interrupção ou Mudança de Direção)
 reset_timer:
     CLR TR1
     ; Para contar 10 eventos até o overflow (0FFFFh + 1):
