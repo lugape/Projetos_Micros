@@ -55,6 +55,6 @@ Os resultados obtidos demonstraram que a solução atende aos requisitos propost
 
 ## Compilação e Simulação
 
-![Captura de Tela da compilação]./assets/compilacao
+![Captura de Tela da compilação]./assets/compilacao.png
 
-![Captura de Tela do SimulIDE]./assets/simulacao
+![Captura de Tela do SimulIDE]./assets/simulacao.png
