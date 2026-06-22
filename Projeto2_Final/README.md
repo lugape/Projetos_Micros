@@ -52,3 +52,9 @@ De modo geral, o projeto permitiu aplicar conceitos importantes de sistemas emba
 O desenvolvimento do aferidor de temperatura de forno industrial permitiu consolidar os conhecimentos relacionados ao microcontrolador PIC18F4550 e seus principais recursos internos. A integração entre ADC, temporizadores, interrupções externas, display LCD e saídas digitais resultou em um sistema funcional capaz de monitorar simultaneamente temperatura e tempo de operação.
 
 Os resultados obtidos demonstraram que a solução atende aos requisitos propostos, fornecendo uma interface simples para monitoramento e simulação do funcionamento de um forno industrial, além de servir como base para aplicações embarcadas mais complexas envolvendo controle e supervisão de processos.
+
+## Compilação e Simulação
+
+![Captura de Tela da compilação]./assets/compilacao
+
+![Captura de Tela do SimulIDE]./assets/simulacao
