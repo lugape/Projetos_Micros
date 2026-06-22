@@ -2,11 +2,11 @@
 
 ## Introdução
 
-Este projeto foi desenvolvido na disciplina **SEL0433 – Aplicação de Microprocessadores** com o objetivo de implementar um sistema embarcado para monitoramento de temperatura e tempo de operação de um forno industrial utilizando o microcontrolador **PIC18F4550**.
+Este projeto foi desenvolvido por mim, Lucas Garcia Pereira NºUSP: 15496307,  na disciplina **SEL0433 – Aplicação de Microprocessadores** com o objetivo de implementar um sistema embarcado para monitoramento de temperatura e tempo de operação de um forno industrial utilizando o microcontrolador **PIC18F4550**.
 
 O sistema integra diferentes periféricos do microcontrolador, incluindo conversor analógico-digital (ADC), temporizadores (Timers), interrupções externas e display LCD. A temperatura do forno é medida por meio de um sensor **LM35** (simulado por um potenciômetro durante os testes) e exibida continuamente em um display LCD no formato **XX.X °C**. Além disso, o usuário pode selecionar diferentes tempos de aferição por meio de botões externos, iniciando contagens regressivas de **10 segundos** ou **60 segundos**.
 
-O projeto foi desenvolvido utilizando a linguagem C no compilador MikroC PRO for PIC e testado em ambiente de simulação compatível com o kit EasyPIC v7.
+O projeto foi desenvolvido utilizando a linguagem C no compilador MikroC PRO e simulado no simulIDE.
 
 ## Descrição do Projeto
 
@@ -37,11 +37,7 @@ O firmware foi estruturado utilizando interrupções para garantir que a contage
 
 As interrupções externas INT0 e INT1 são responsáveis por iniciar as contagens regressivas de 60 s e 10 s, respectivamente. Durante a execução da contagem, os temporizadores geram interrupções periódicas que decrementam o valor exibido no display.
 
-A leitura da temperatura é realizada continuamente pelo módulo ADC do PIC18F4550. O valor digital obtido é convertido para temperatura sem a utilização de variáveis do tipo `float`, reduzindo o consumo de memória e aumentando a eficiência da aplicação.
-
 ## Resultados e Discussão
-
-Os testes realizados em simulação demonstraram o funcionamento correto de todos os requisitos especificados no projeto.
 
 A leitura da temperatura apresentou comportamento consistente ao variar o potenciômetro utilizado para simular o sensor LM35, permitindo a visualização contínua dos valores no display LCD com uma casa decimal de precisão.
 
@@ -49,7 +45,7 @@ As contagens regressivas de 10 s e 60 s foram executadas corretamente por meio d
 
 O LED que representa a resistência do forno também apresentou comportamento adequado, ligando-se quando a temperatura estava abaixo de 60 °C e desligando-se acima de 80 °C, simulando um sistema simples de controle térmico.
 
-De modo geral, o projeto permitiu aplicar conceitos importantes de sistemas embarcados, como configuração de registradores, utilização de periféricos do PIC18F4550, programação orientada a interrupções, conversão analógico-digital e integração de múltiplos dispositivos em uma única aplicação.
+De modo geral, o projeto permitiu aplicar conceitos importantes de sistemas embarcados, como configuração de registradores, utilização de periféricos do PIC18F4550, programação de interrupções, conversão analógico-digital e integração de múltiplos dispositivos em uma única aplicação.
 
 ## Conclusão
 
