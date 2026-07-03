@@ -90,4 +90,4 @@ Enquanto um microcontrolador de 8 bits atenderia a tarefas isoladas, ele teria d
 ---
 
 ## Diagramas e Registros de Simulação
-![simu_wokwi_parte1](.assets/simu_wokwi_parte1.png)
+![simu_wokwi_parte1](Projeto3_Final/assets/simu_wokwi_final.png)
