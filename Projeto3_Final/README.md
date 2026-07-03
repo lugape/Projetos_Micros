@@ -92,7 +92,7 @@ Enquanto um microcontrolador de 8 bits atenderia a tarefas isoladas, ele teria d
 ## Diagramas e Registros de Simulação
 
 * Parte 1 - Controle PWM em LED RGB
-![simu_wokwi_parte1](./assets/simu_wokwi_final.png)
+![simu_wokwi_parte1](./assets/simu_wokwi_parte1.png)
 
 * Parte 2 - Exercício 1: Controle de Servomotor via Potenciômetro
 ![simu_wokwi_parte2_ex1](./assets/simu_wokwi_parte2_ex1.png)
